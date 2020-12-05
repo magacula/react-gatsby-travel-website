@@ -56,6 +56,7 @@ export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 960px) {
+    color: ${({ click, active }) => (click || active ? "#141414" : "#fff")};
     display: block;
     position: absolute;
     top: 0;

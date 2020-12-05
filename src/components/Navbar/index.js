@@ -34,36 +34,34 @@ const Navbar = () => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#141414" }}>
-        <Nav active={scroll} click={click}>
-          <NavbarContainer>
-            <NavLogo to="/" active={scroll}>
-              <NavIcon active={scroll} />
-              XCAPE
-            </NavLogo>
-            <MobileIcon onClick={handleClick} active={click}>
-              {click ? <FaTimes /> : <FaBars />}
-            </MobileIcon>
-            <NavMenu onClick={handleClick} click={click}>
-              <NavItem>
-                <NavLinks to="/" active={scroll}>
-                  Home
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/" active={scroll}>
-                  Images
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="/" active={scroll}>
-                  Destinations
-                </NavLinks>
-              </NavItem>
-            </NavMenu>
-          </NavbarContainer>
-        </Nav>
-      </IconContext.Provider>
+      <Nav active={scroll} click={click}>
+        <NavbarContainer>
+          <NavLogo to="/" active={scroll}>
+            <NavIcon active={scroll} />
+            XCAPE
+          </NavLogo>
+          <MobileIcon onClick={handleClick} active={scroll} click={click}>
+            {click ? <FaTimes /> : <FaBars />}
+          </MobileIcon>
+          <NavMenu onClick={handleClick} click={click}>
+            <NavItem>
+              <NavLinks to="/" active={scroll}>
+                Home
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="/" active={scroll}>
+                Images
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="/" active={scroll}>
+                Destinations
+              </NavLinks>
+            </NavItem>
+          </NavMenu>
+        </NavbarContainer>
+      </Nav>
     </>
   )
 }
