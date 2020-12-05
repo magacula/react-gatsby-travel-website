@@ -27,7 +27,7 @@ const HeroContainer = styled.div`
   background: #0c0c0c;
   justify-content: center;
   align-items: center;
-  width: 100%1;
+  width: 100%;
   height: 100vh;
   padding: 0 1rem;
   position: relative;
@@ -42,6 +42,7 @@ const HeroContainer = styled.div`
     right: 0;
     left: 0;
     z-index: 2;
+    background-color: rgba(0, 0, 0, 0.07);
   }
 `
 
@@ -62,14 +63,6 @@ const VideoBg = styled.video`
   -o-object-fit: cover;
   object-fit: cover;
 `
-
-const HeroContent = styled.div`
-  z-index: 3;
-  height: calc(100vh - 80px);
-  max-height: 100%;
-  padding: 0rem calc((100vw - 1300px) / 2);
-`
-
 const HeroItems = styled.div`
   display: flex;
   flex-direction: column;
@@ -82,6 +75,13 @@ const HeroItems = styled.div`
   color: #fff;
   line-height: 1.2;
   font-weight: bold;
+`
+
+const HeroContent = styled.div`
+  z-index: 3;
+  height: calc(100vh - 80px);
+  max-height: 100%;
+  padding: 0rem calc((100vw - 1300px) / 2);
 `
 
 const Hero_h1 = styled.h1`
