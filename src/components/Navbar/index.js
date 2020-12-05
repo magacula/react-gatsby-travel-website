@@ -37,22 +37,28 @@ const Navbar = () => {
       <IconContext.Provider value={{ color: "#141414" }}>
         <Nav active={scroll} click={click}>
           <NavbarContainer>
-            <NavLogo to="/">
-              <NavIcon />
+            <NavLogo to="/" active={scroll}>
+              <NavIcon active={scroll} />
               XCAPE
             </NavLogo>
-            <MobileIcon onClick={handleClick}>
+            <MobileIcon onClick={handleClick} active={click}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="/">Home</NavLinks>
+                <NavLinks to="/" active={scroll}>
+                  Home
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/">Images</NavLinks>
+                <NavLinks to="/" active={scroll}>
+                  Images
+                </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/">Destinations</NavLinks>
+                <NavLinks to="/" active={scroll}>
+                  Destinations
+                </NavLinks>
               </NavItem>
             </NavMenu>
           </NavbarContainer>
