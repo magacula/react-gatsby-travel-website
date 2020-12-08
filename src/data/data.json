@@ -1,0 +1,26 @@
+[
+  {
+    "img": "../assets/images/trip3.jpg",
+    "alt": "Vernazza, Italy",
+    "name": "Vernazza, Italy",
+    "button": "View Destination"
+  },
+  {
+    "img": "../assets/images/trip4.jpg",
+    "alt": "Antelope Canyon, United States",
+    "name": "Antelope Canyon, United States",
+    "button": "View Destination"
+  },
+  {
+    "img": "../assets/images/trip2.jpg",
+    "alt": "Amsterdam, Netherlands",
+    "name": "Amsterdam, Netherlands",
+    "button": "View Destination"
+  },
+  {
+    "img": "../assets/images/trip1.jpg",
+    "alt": "Bali, Indonesia",
+    "name": "Bali, Indonesia",
+    "button": "View Destination"
+  }
+]
