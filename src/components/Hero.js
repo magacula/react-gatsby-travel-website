@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Button } from "./Button"
-import Video from "../assets/bg_video2.mp4"
+import Video from "../assets/videos/bg_video2.mp4"
 
 const Hero = () => {
   return (
@@ -13,7 +13,9 @@ const Hero = () => {
         <HeroItems>
           <Hero_h1>Take An Escape</Hero_h1>
           <Hero_p>Plan your next trip today</Hero_p>
-          <Button primary="true">Lets Get Started</Button>
+          <Button to="/" primary="true">
+            Lets Get Started
+          </Button>
         </HeroItems>
       </HeroContent>
     </HeroContainer>
