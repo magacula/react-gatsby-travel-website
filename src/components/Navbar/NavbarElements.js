@@ -2,12 +2,11 @@
 
 import styled from "styled-components"
 import { GiPalmTree } from "react-icons/gi"
+import { FaBars, FaTimes } from "react-icons/fa"
 import { Link } from "gatsby"
 
-// Nav is styled to be transparent as default, then when scrolled, changes
-// background to white
 export const Nav = styled.nav`
-  background: ${({ active }) => (active ? "#fff" : "#transparent")};
+  background: #141414;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -18,7 +17,6 @@ export const Nav = styled.nav`
   z-index: 999;
 
   @media screen and (max-width: 960px) {
-    background: ${({ click }) => (click ? "#fff" : "transparent")};
     transition: 0.8s all ease;
   }
 `
@@ -33,7 +31,7 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(Link)`
-  color: ${({ active }) => (active ? "#141414" : "#fff")};
+  color: #fff;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -45,7 +43,7 @@ export const NavLogo = styled(Link)`
 
 export const NavIcon = styled(GiPalmTree)`
   margin: 0 0.5rem 0 2rem;
-  fill: ${({ active }) => (active ? "#141414" : "#fff")};
+  fill: #fff;
 `
 
 /*******************************************************************
@@ -56,7 +54,6 @@ export const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 960px) {
-    color: ${({ click, active }) => (click || active ? "#141414" : "#fff")};
     display: block;
     position: absolute;
     top: 0;
@@ -76,6 +73,7 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
 
+  // For mobile screen sizes
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: column;
@@ -98,7 +96,7 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(Link)`
-  color: ${({ active }) => (active ? "#141414" : "#fff")};
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -112,16 +110,21 @@ export const NavLinks = styled(Link)`
     transition: all 0.3s ease;
   }
 
+  // For mobile screen sizes
   @media screen and (max-width: 960px) {
+    background: #fff;
     color: #141414;
     text-align: center;
     padding: 2rem;
     width: 100%;
     display: table;
-
-    &:hover {
-      color: #ff4040;
-      transition: all 0.3s ease;
-    }
   }
+`
+
+export const Bars = styled(FaBars)`
+  color: #fff;
+`
+
+export const Times = styled(FaTimes)`
+  color: #fff;
 `

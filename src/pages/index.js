@@ -1,14 +1,16 @@
 import React from "react"
+import Destinations from "../components/Destinations"
 import Hero from "../components/Hero"
-
-import Layout from "../components/layout"
 import SEO from "../components/seo"
+import HomeNav from "../components/Navbar/HomeNav"
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
+    <HomeNav />
     <Hero />
-  </Layout>
+    <Destinations />
+  </>
 )
 
 export default IndexPage
