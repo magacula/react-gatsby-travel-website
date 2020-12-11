@@ -11,8 +11,8 @@ const Hero = () => {
       </HeroBg>
       <HeroContent>
         <HeroItems>
-          <Hero_h1>Take An Escape</Hero_h1>
-          <Hero_p>Plan your next trip today</Hero_p>
+          <HeroH1>Take An Escape</HeroH1>
+          <HeroP>Plan your next trip today</HeroP>
           <Button to="/" primary="true">
             Lets Get Started
           </Button>
@@ -86,7 +86,7 @@ const HeroContent = styled.div`
   padding: 0rem calc((100vw - 1300px) / 2);
 `
 
-const Hero_h1 = styled.h1`
+const HeroH1 = styled.h1`
   // clamp can help resize fonts instead of using media queries
   // clamp (smallest size font, amount to increase, max size font)
   font-size: clamp(1.8rem, 6vw, 4rem);
@@ -96,7 +96,7 @@ const Hero_h1 = styled.h1`
   font-family: "PT Sans Caption", sans-serif;
 `
 
-const Hero_p = styled.p`
+const HeroP = styled.p`
   font-size: clamp(1rem, 3vw, 2rem);
   margin-bottom: 2rem;
   font-family: "PT Sans Caption", sans-serif;

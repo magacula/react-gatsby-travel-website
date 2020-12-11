@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Button } from "./Button"
 import { ImLocation } from "react-icons/im"
+import { Heading, Description } from "./HeadingsElements"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -64,12 +65,11 @@ const Destinations = () => {
   }
 
   return (
-    <div>
-      <TripsContainer>
-        <TripsHeading>Featured Destinations</TripsHeading>
-        <TripsWrapper>{getData(data)}</TripsWrapper>
-      </TripsContainer>
-    </div>
+    <TripsContainer>
+      <Heading>Popular Destinations</Heading>
+      <Description>World's best tourist destinations</Description>
+      <TripsWrapper>{getData(data)}</TripsWrapper>
+    </TripsContainer>
   )
 }
 
@@ -82,18 +82,9 @@ export default Destinations
 
 const TripsContainer = styled.div`
   min-height: 100vh;
-  padding: 5rem calc((100vw - 1300px) / 2);
+  padding: 4rem calc((100vw - 1300px) / 2);
   background: #fff;
   color: #fff;
-`
-
-const TripsHeading = styled.div`
-  font-size: clamp(1.8rem, 6vw, 4rem);
-  text-align: center;
-  margin-bottom: 5rem;
-  font-family: "PT Sans Caption", sans-serif;
-  font-weight: bold;
-  color: #000;
 `
 
 const TripsWrapper = styled.div`
