@@ -51,7 +51,7 @@ const HomeNavbar = () => {
             <NavLinks to="/">Home</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to="/destinations">Destinations</NavLinks>
+            <NavLinks to="/destinations">Explore</NavLinks>
           </NavItem>
           <NavItem>
             <NavLinks to="/contact">Contact</NavLinks>
@@ -64,17 +64,17 @@ const HomeNavbar = () => {
 
 export default HomeNavbar
 
-export const Bars = styled(FaBars)`
+const Bars = styled(FaBars)`
   color: #fff;
 `
 
-export const Times = styled(FaTimes)`
+const Times = styled(FaTimes)`
   color: #141414;
 `
 
 // Nav is styled to be transparent as default, then when scrolled, changes
 // background to white
-export const HomeNav = styled.nav`
+const HomeNav = styled.nav`
   background: ${({ active }) => (active ? "#141414" : "#transparent")};
   height: 80px;
   display: flex;

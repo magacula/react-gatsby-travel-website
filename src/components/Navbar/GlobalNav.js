@@ -32,7 +32,7 @@ const GlobalNav = () => {
             <NavLinks to="/">Home</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to="/destinations">Destinations</NavLinks>
+            <NavLinks to="/destinations">Explore</NavLinks>
           </NavItem>
           <NavItem>
             <NavLinks to="/contact">Contact</NavLinks>
