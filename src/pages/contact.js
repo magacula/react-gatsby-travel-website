@@ -1,12 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import "../components/styles/GlobalStyles.css"
 
-const Images = () => (
+const Contact = () => (
   <Layout>
-    <SEO title="Page two" />
-    <h1>Contact</h1>
+    <SEO title="Contact" />
+    <div className="contact">CONTACT US</div>
   </Layout>
 )
 
-export default Images
+export default Contact
