@@ -75,6 +75,12 @@ const StatsBg = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 1);
+`
+
+const BgImage = styled(BackgroundImage)`
+  width: 100%;
+  height: 100%;
 `
 
 const Content = styled.div`
@@ -87,11 +93,6 @@ const StatHeading = styled(Heading)`
 
 const StatText = styled(Description)`
   color: #fff;
-`
-
-const BgImage = styled(BackgroundImage)`
-  width: 100%;
-  height: 100%;
 `
 
 export const Wrapper = styled.div`
@@ -195,6 +196,7 @@ const ButtonContainer = styled.div`
   align-content: center;
   justify-content: center;
   margin-top: -1.5rem;
+  margin-bottom: 2rem;
 `
 
 const MyButton = styled(Button)`

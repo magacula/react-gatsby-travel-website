@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import HomeNav from "../components/Navbar/HomeNav"
 import Stats from "../components/Stats"
 import Testimonials from "../components/Testimonials"
+import Email from "../components/Email"
 
 const IndexPage = () => (
   <>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <Destinations />
     <Stats />
     <Testimonials />
+    <Email />
   </>
 )
 
