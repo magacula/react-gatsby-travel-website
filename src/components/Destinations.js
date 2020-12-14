@@ -54,9 +54,9 @@ const Destinations = () => {
               <TripTitle>{item.node.name}</TripTitle>
             </TextWrap>
             {/* We can use css property to add an inline style to our custom component */}
-            <Button to="/destinations" primary="true" style={buttonStyle}>
+            <MyButton to="/destinations" primary="true">
               {item.node.button}
-            </Button>
+            </MyButton>
           </TripInfo>
         </TripCard>
       )
@@ -81,7 +81,6 @@ export default Destinations
  */
 
 const TripsContainer = styled.div`
-  min-height: 100vh;
   padding: 4rem calc((100vw - 1300px) / 2);
   background: #fff;
   color: #fff;
@@ -157,8 +156,8 @@ const TripTitle = styled.div`
   font-size: 1rem;
   margin-left: 0.5rem;
 `
-var buttonStyle = {
-  position: "absolute",
-  top: "420px",
-  fontSize: "14px",
-}
+const MyButton = styled(Button)`
+  position: absolute;
+  top: 420px;
+  font-size: 14px;
+`

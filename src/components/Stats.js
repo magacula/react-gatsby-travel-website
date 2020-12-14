@@ -6,6 +6,7 @@ import { MdTimer } from "react-icons/md"
 import { FaMoneyCheck } from "react-icons/fa"
 import BackgroundImage from "gatsby-background-image"
 import { Heading, Description } from "./HeadingsElements"
+import { Button } from "./Button"
 
 export const Stats = () => {
   const data = useStaticQuery(
@@ -36,36 +37,38 @@ export const Stats = () => {
       <Content>
         <StatHeading>Why Choose Us?</StatHeading>
         <StatText>A brand name you can trust</StatText>
-        <StatsWrapper>
+        <Wrapper>
           {StatsInfo.map((item, index) => {
             return (
-              <StatsBox key={index}>
+              <Box key={index}>
                 <IconContainer>
                   <IconBackground>
                     <Icon>{item.icon}</Icon>
                   </IconBackground>
                 </IconContainer>
-                <StatTitle>{item.title}</StatTitle>
-                <StatDes>{item.des}</StatDes>
-              </StatsBox>
+                <Title>{item.title}</Title>
+                <Des>{item.des}</Des>
+              </Box>
             )
           })}
-        </StatsWrapper>
+        </Wrapper>
+        <ButtonContainer>
+          <MyButton primary="true" to="/contact">
+            CONTACT US
+          </MyButton>
+        </ButtonContainer>
       </Content>
     </StatsContainer>
   )
 }
 
-export default Stats
-
 const StatsContainer = styled.div`
-  width: 100%;
   color: #000;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   padding: 4rem 0;
-  position: relative;
 `
 
 const StatsBg = styled.div`
@@ -91,7 +94,7 @@ const BgImage = styled(BackgroundImage)`
   height: 100%;
 `
 
-const StatsWrapper = styled.div`
+export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
@@ -109,7 +112,7 @@ const StatsWrapper = styled.div`
   }
 `
 
-const StatsBox = styled.div`
+export const Box = styled.div`
   height: 100%;
   width: 100%;
   padding: 2rem;
@@ -117,13 +120,13 @@ const StatsBox = styled.div`
   max-width: 375px;
 `
 
-const IconContainer = styled.div`
+export const IconContainer = styled.div`
   display: flex;
   justify-content: center;
   align-content: center;
 `
 
-const IconBackground = styled.div`
+export const IconBackground = styled.div`
   height: 80px;
   width: 80px;
   background-color: #fff;
@@ -133,7 +136,7 @@ const IconBackground = styled.div`
   display: inline-block;
 `
 
-const Icon = styled.div`
+export const Icon = styled.div`
   font-size: 3rem;
   text-align: center;
   margin: auto;
@@ -152,7 +155,7 @@ const Wallet = styled(FaMoneyCheck)`
   fill: #f26a2e;
 `
 
-const StatTitle = styled.div`
+export const Title = styled.div`
   font-size: clamp(1.8rem, 2.5vw, 1.5rem);
   text-align: center;
   font-family: "PT Sans Caption", sans-serif;
@@ -162,7 +165,7 @@ const StatTitle = styled.div`
   margin: 0.5rem 0 1rem 0;
 `
 
-const StatDes = styled.div`
+export const Des = styled.div`
   font-size: clamp(0.5rem, 6vw, 1rem);
   text-align: center;
   margin-bottom: 4rem;
@@ -187,3 +190,23 @@ const StatsInfo = [
     des: "We offer the best prices available ",
   },
 ]
+const ButtonContainer = styled.div`
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: -1.5rem;
+`
+
+const MyButton = styled(Button)`
+  transform: scale(1.2);
+  width: 180px;
+  text-align: center;
+  min-width: 100px;
+  font-weight: bold;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+`
+
+export default Stats
