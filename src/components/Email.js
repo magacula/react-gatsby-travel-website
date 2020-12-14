@@ -43,7 +43,8 @@ const EmailContainer = styled.div`
       rgba(0, 0, 0, 0.1) 100%
     ),
     url(${EmailBg}) no-repeat center;
-  height: 450px;
+  background-size: cover;
+  height: 350px;
   width: 100%;
   padding: 5rem calc((100vw - 1300px) / 2);
   color: #fff;
