@@ -13,7 +13,7 @@ export const Heading = styled.h1`
 export const Description = styled.p`
   font-size: clamp(0.5rem, 6vw, 1.1rem);
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   margin-top: 0.3rem;
   color: #595959;
 `
