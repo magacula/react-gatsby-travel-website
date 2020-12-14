@@ -7,6 +7,7 @@ import Stats from "../components/Stats"
 import Testimonials from "../components/Testimonials"
 import Email from "../components/Email"
 import Footer from "../components/Footer"
+import "../components/styles/GlobalStyles.css"
 
 const IndexPage = () => (
   <>
