@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Testimonials from "../components/Testimonials"
+import "../components/styles/GlobalStyles.css"
 
 const About = () => (
   <Layout>
-    <SEO title="Page two" />
-    <Testimonials />
+    <SEO title="About Us" />
+    <div className="about">ABOUT US</div>
   </Layout>
 )
 
