@@ -73,8 +73,6 @@ const Destinations = () => {
   )
 }
 
-export default Destinations
-
 /***********************************************************************************
  ****************** Trips Styled Components ****************************************
  ***********************************************************************************
@@ -161,3 +159,5 @@ const MyButton = styled(Button)`
   top: 420px;
   font-size: 14px;
 `
+
+export default Destinations

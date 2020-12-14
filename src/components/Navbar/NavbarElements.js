@@ -4,6 +4,7 @@ import styled from "styled-components"
 import { GiPalmTree } from "react-icons/gi"
 import { FaBars, FaTimes } from "react-icons/fa"
 import { Link } from "gatsby"
+import "../styles/GlobalStyles.css"
 
 export const Nav = styled.nav`
   background: #141414;

@@ -1,4 +1,4 @@
-import React from "react"
+import "./styles/GlobalStyles.css"
 import styled from "styled-components"
 
 export const Heading = styled.h1`
