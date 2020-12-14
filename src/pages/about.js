@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../components/styles/GlobalStyles.css"
+import "../components/styles/GlobalStyles.js"
 
 const About = () => (
   <Layout>

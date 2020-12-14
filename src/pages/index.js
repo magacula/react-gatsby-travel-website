@@ -7,10 +7,12 @@ import Stats from "../components/Stats"
 import Testimonials from "../components/Testimonials"
 import Email from "../components/Email"
 import Footer from "../components/Footer"
+import { GlobalStyles } from "../components/styles/GlobalStyles"
 
 const IndexPage = () => (
   <>
     <SEO title="Home" />
+    <GlobalStyles />
     <HomeNav />
     <Hero />
     <Destinations />

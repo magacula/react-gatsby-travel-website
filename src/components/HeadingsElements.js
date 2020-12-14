@@ -1,4 +1,4 @@
-import "./styles/GlobalStyles.css"
+import "./styles/GlobalStyles.js"
 import styled from "styled-components"
 
 export const Heading = styled.h1`
