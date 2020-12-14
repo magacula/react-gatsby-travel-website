@@ -208,6 +208,7 @@ const MyButton = styled(Button)`
 
   &:hover {
     transform: scale(1.2);
+    cursor: pointer;
   }
 `
 
