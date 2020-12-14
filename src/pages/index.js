@@ -7,11 +7,9 @@ import Stats from "../components/Stats"
 import Testimonials from "../components/Testimonials"
 import Email from "../components/Email"
 import Footer from "../components/Footer"
-import "../components/styles/GlobalStyles.css"
-import Layout from "../components/layout"
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
     <HomeNav />
     <Hero />
@@ -20,7 +18,7 @@ const IndexPage = () => (
     <Testimonials />
     <Email />
     <Footer />
-  </Layout>
+  </>
 )
 
 export default IndexPage
