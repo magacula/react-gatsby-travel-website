@@ -14,7 +14,7 @@ const Hero = () => {
           <HeroH1>Take An Escape</HeroH1>
           <HeroP>Plan your next trip today</HeroP>
           <Button to="/" primary="true">
-            Lets Get Started
+            GET STARTED
           </Button>
         </HeroItems>
       </HeroContent>
