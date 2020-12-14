@@ -69,10 +69,12 @@ export default HomeNavbar
 
 const Bars = styled(FaBars)`
   color: #fff;
+  font-size: 2rem;
 `
 
 const Times = styled(FaTimes)`
   color: #141414;
+  font-size: 2rem;
 `
 
 // Nav is styled to be transparent as default, then when scrolled, changes

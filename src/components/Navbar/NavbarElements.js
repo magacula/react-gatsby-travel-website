@@ -39,7 +39,8 @@ export const NavLogo = styled(Link)`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  font-family: "Righteous", cursive;
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: bold;
 `
 
 export const NavIcon = styled(GiPalmTree)`
@@ -124,8 +125,10 @@ export const NavLinks = styled(Link)`
 
 export const Bars = styled(FaBars)`
   color: #fff;
+  font-size: 2rem;
 `
 
 export const Times = styled(FaTimes)`
   color: #fff;
+  font-size: 2rem;
 `

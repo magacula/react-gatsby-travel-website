@@ -1,63 +1,37 @@
 import React from "react"
 import styled from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
 import { GiEarthAmerica } from "react-icons/gi"
 import { MdTimer } from "react-icons/md"
 import { FaMoneyCheck } from "react-icons/fa"
-import BackgroundImage from "gatsby-background-image"
 import { Heading, Description } from "./HeadingsElements"
 import { Button } from "./Button"
+import StatBg from "../assets/images/bg-2.jpg"
 
 export const Stats = () => {
-  const data = useStaticQuery(
-    graphql`
-      query BackgroundQuery {
-        backgroundImage: file(relativePath: { eq: "bg-2.PNG" }) {
-          childImageSharp {
-            fluid {
-              # copies all additional GatsbyImageSharpFluid props
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    `
-  )
-
-  // const imageData = data.background.childImageSharp.fluid
-
   return (
     <StatsContainer>
-      <StatsBg>
-        <BgImage
-          src={data.backgroundImage.childImageSharp.fluid.src}
-          fluid={data.backgroundImage.childImageSharp.fluid}
-        ></BgImage>
-      </StatsBg>
-      <Content>
-        <StatHeading>Why Choose Us?</StatHeading>
-        <StatText>A brand name you can trust</StatText>
-        <Wrapper>
-          {StatsInfo.map((item, index) => {
-            return (
-              <Box key={index}>
-                <IconContainer>
-                  <IconBackground>
-                    <Icon>{item.icon}</Icon>
-                  </IconBackground>
-                </IconContainer>
-                <Title>{item.title}</Title>
-                <Des>{item.des}</Des>
-              </Box>
-            )
-          })}
-        </Wrapper>
-        <ButtonContainer>
-          <MyButton primary="true" to="/contact">
-            CONTACT US
-          </MyButton>
-        </ButtonContainer>
-      </Content>
+      <StatHeading>Why Choose Us?</StatHeading>
+      <StatText>A brand name you can trust</StatText>
+      <Wrapper>
+        {StatsInfo.map((item, index) => {
+          return (
+            <Box key={index}>
+              <IconContainer>
+                <IconBackground>
+                  <Icon>{item.icon}</Icon>
+                </IconBackground>
+              </IconContainer>
+              <Title>{item.title}</Title>
+              <Des>{item.des}</Des>
+            </Box>
+          )
+        })}
+      </Wrapper>
+      <ButtonContainer>
+        <MyButton primary="true" to="/contact">
+          CONTACT US
+        </MyButton>
+      </ButtonContainer>
     </StatsContainer>
   )
 }
@@ -69,22 +43,8 @@ const StatsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: 4rem 0;
-`
-
-const StatsBg = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 1);
-`
-
-const BgImage = styled(BackgroundImage)`
-  width: 100%;
-  height: 100%;
-`
-
-const Content = styled.div`
-  z-index: 12;
+  background: url(${StatBg}) center center/cover no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.35);
 `
 
 const StatHeading = styled(Heading)`
