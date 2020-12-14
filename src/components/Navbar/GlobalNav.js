@@ -35,6 +35,9 @@ const GlobalNav = () => {
             <NavLinks to="/destinations">Explore</NavLinks>
           </NavItem>
           <NavItem>
+            <NavLinks to="/about">About Us</NavLinks>
+          </NavItem>
+          <NavItem>
             <NavLinks to="/contact">Contact</NavLinks>
           </NavItem>
         </NavMenu>
