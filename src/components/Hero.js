@@ -2,12 +2,21 @@ import React from "react"
 import styled from "styled-components"
 import { Button } from "./Button"
 import Video from "../assets/videos/bg_video2.mp4"
+import BgImage from "../assets/images/hero.png"
 
 const Hero = () => {
   return (
     <HeroContainer>
       <HeroBg>
-        <VideoBg src={Video} type="video/mp4" autoPlay loop muted playsInline />
+        <VideoBg
+          src={Video}
+          type="video/mp4"
+          poster={BgImage}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
       </HeroBg>
       <HeroContent>
         <HeroItems>
