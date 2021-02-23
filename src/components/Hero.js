@@ -36,7 +36,6 @@ export default Hero
 const HeroContainer = styled.div`
   display: flex;
   /* background: #0c0c0c; */
-  background: url("../assets/images/hero.png") no-repeat center center/cover;
   justify-content: center;
   align-items: center;
   width: 100%;
